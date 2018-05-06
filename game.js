@@ -28,14 +28,15 @@ document.getElementById('display').innerHTML = colors[target];
 for (let square of squares) {
   square.addEventListener('click', function() {
   if(square === squares[target] ){
- document.getElementById('message').innerHTML = 'elem';
 fill(colors[target]);
-document.querySelector('.header').style.background = colors[target];
+ document.getElementById('message').innerHTML = 'Correcty';
+document.querySelector('.header > h1').style.background = colors[target];
   isEnd = true;
 
     }
    if(!isEnd){
      square.style.visibility = 'hidden';
+     document.getElementById('message').innerHTML = 'Try Again';
    }
   });
 }

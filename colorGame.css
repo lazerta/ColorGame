@@ -9,11 +9,11 @@ body {
    margin: 0 auto;
 }
 .square {
-  width: 33.3%;
+  width: 30%;
   padding-bottom: 30%;
   background: purple;
   display: inline-block;
-  margin: 1.66%;
+  margin: 1%;
   border-radius: 15%;
    opacity: 0.5
 
