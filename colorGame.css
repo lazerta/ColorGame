@@ -15,21 +15,58 @@ body {
   display: inline-block;
   margin: 1%;
   border-radius: 15%;
-   opacity: 0.5
+  transition: visibility, 0.6s;
+  opacity: 0.5
 
 }
 
-.header>h1 {
+h1 {
   text-align: center;
   color: white;
   background-color: darkorange;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: visibility, 0.6s;
 }
 
+
 #message {
+display: inline-block;
+width: 20%;
+
+}
+#display {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.bar {
   text-align: center;
-  font-size: 3rem;
-  padding-bottom: 0;
-  padding-bottom: 20%;
-  color: gray;
+  height: 30px;
+  background: #ffffff;
+
+
+}
+
+.bar button {
+  height: 100%;
+  border: none;
+  font-weight: 700;
+  background: #ffffff;
+  text-transform: uppercase;
+  color: steelblue;
+  outline: none;
+}
+#message {
+  display: inline-block;
+}
+.bar button:hover {
+  background: steelblue;
+  color: white;
+  transition: all 1s;
+}
+
+.selected {
+  background: steelblue;
+  color: white;
 }
